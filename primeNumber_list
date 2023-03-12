@@ -1,0 +1,13 @@
+li=[1,23,45,7,11,433,531,90,32,78,91,1,17,29]
+li1=[]
+li2=[]
+[li2.append(i) for i in li if 1!=i]
+for x in li2:
+    for y in range(2,x,1):
+        if x % y==0:
+            li1.append(x)
+            break
+a=set(li2)
+b=set(li1)
+n=a.difference(b)
+print(n)
